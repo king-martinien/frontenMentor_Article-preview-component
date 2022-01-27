@@ -114,6 +114,9 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 20px;
 }
 
@@ -200,5 +203,32 @@ button {
   width: 30px;
   height: 30px;
   border-radius: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    height: 280px;
+  }
+  .card__img {
+    height: auto;
+  }
+  .card__img img {
+    -o-object-position: left;
+       object-position: left;
+  }
+  .card__content {
+    width: 480px;
+    padding: 35px;
+    padding-bottom: 18px;
+  }
+  .card__content-title {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
